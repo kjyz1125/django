@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ejo++0*p-o$^(g#0*77s-=y#=knv$)m7v+db$hsg%(bsrgkmg('
+SECRET_KEY = '^k19h_w2g(styel&3aheo2glc!w!o3y8!3*%*=csgeqsf8eda+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,13 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     
     'rest_framework',
     'rest_framework_swagger',
     'member',
 ]
-
-YOUTUBE_API_KEY = 'AIzaSyCN8ZpG6VtyLswxupebp4rjdcj47tHYRC0'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -72,13 +71,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WEBPACK_LOADER = {
-    'DEFAULT': {
-            'BUNDLE_DIR_NAME': 'bundles/',
-            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
-    }
-}
 
 WSGI_APPLICATION = 'rest_server.wsgi.application'
 
