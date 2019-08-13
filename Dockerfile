@@ -1,5 +1,4 @@
 FROM python:3
-MAINTAINER kjyz1125@gmail.com
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /sw
 WORKDIR /sw
